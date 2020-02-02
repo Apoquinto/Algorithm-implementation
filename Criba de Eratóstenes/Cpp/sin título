@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+bool p[10000000];
+
+void cribaErato(){
+	for(int i=2;i<=a;i++){
+		if(!p[i]){
+			for(int j=2;i*j<=a;j++){
+				p[i*j]=true;
+			}
+		}
+	}
+}
+
+int main(){
+
+int n;
+
+cin>>n;
+
+
+
+for(int i=1;i<a;i++){
+    if(!p[i]) cout<< i << " ";
+}
+
+return 0;
+
+}
+
